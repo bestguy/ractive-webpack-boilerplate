@@ -1,0 +1,25 @@
+{
+  "name": "ractive-webpack-boilerplate",
+  "version": "0.1.0",
+  "authors": [
+    "bestguy"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "i18next": "~1.8.0",
+    "lodash": "~3.5.0",
+    "marked": "~0.3.3",
+    "moment": "~2.9.0",
+    "ractive": "~0.7.1",
+    "ractive-transitions-fade": "~0.1.2",
+    "ractive-transitions-slide": "~0.1.2"
+  }
+}

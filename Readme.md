@@ -8,6 +8,7 @@ Boilerplate repo for a few of my *favorite things*:
 * [lodash](https://lodash.com/docshttps://github.com/chjj/marked)
 * [marked](https://github.com/chjj/marked)
 * [Moment.js](http://momentjs.com/)
+* [xhttp](https://github.com/Mitranim/xhttp)
 
 
 ![](Readme.jpg)

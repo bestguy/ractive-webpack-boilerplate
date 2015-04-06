@@ -26,6 +26,7 @@ module.exports = {
    'ractive-transitions-slide': __dirname + '/public/scripts/bower_components/ractive-transitions-slide/ractive-transitions-slide.js',
                   'underscore': __dirname + '/public/scripts/bower_components/lodash/lodash.js',
                 'webpack-i18n': __dirname + '/public/scripts/lib/webpack/webpack-i18n.js',
+                       'xhttp': __dirname + '/public/scripts/bower_components/xhttp/dist/xhttp.js'
     }
   },
   plugins: [

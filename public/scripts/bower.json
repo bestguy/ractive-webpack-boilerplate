@@ -20,6 +20,7 @@
     "moment": "~2.9.0",
     "ractive": "~0.7.1",
     "ractive-transitions-fade": "~0.1.2",
-    "ractive-transitions-slide": "~0.1.2"
+    "ractive-transitions-slide": "~0.1.2",
+    "xhttp": "~0.0.5"
   }
 }

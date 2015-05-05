@@ -17,10 +17,8 @@ Boilerplate repo for a few of my *favorite things*:
 
 ## Install & Run:
 
-    npm install
-    cd ./public/scripts
     bower install
-    cd ../..
+    npm install
     node app.js
     open http://localhost:3000
     

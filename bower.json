@@ -14,13 +14,13 @@
     "tests"
   ],
   "dependencies": {
-    "i18next": "~1.8.0",
-    "lodash": "~3.5.0",
+    "i18next": "~1.8.2",
+    "lodash": "~3.8.0",
     "marked": "~0.3.3",
-    "moment": "~2.9.0",
-    "ractive": "~0.7.1",
-    "ractive-transitions-fade": "~0.1.2",
-    "ractive-transitions-slide": "~0.1.2",
-    "xhttp": "~0.0.5"
+    "moment": "~2.10.2",
+    "ractive": "~0.7.3",
+    "ractive-transitions-fade": "~0.2.1",
+    "ractive-transitions-slide": "~0.2.1",
+    "xhttp": "~0.0.6"
   }
 }

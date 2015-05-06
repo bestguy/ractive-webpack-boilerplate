@@ -9,6 +9,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css/, loader: 'style-loader!css-loader' },
+      { test: /\.es6/, loader: 'babel-loader' },
       { test: /\.less/, loader: 'style-loader!css-loader!less-loader' },
       { test: /\.jade$/, loader: 'html!jade-html' },
       { test: /\.json/, loader: 'json-loader' },

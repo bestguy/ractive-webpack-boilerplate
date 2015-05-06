@@ -2,6 +2,7 @@
 
 Boilerplate repo for a few of my *favorite things*:
 
+* [ES6 (via BabelJS)](http://babeljs.io/)
 * [Ractive](http://www.ractivejs.org/)
 * [Webpack](http://webpack.github.io)
 * [i18next](http://i18next.com/)

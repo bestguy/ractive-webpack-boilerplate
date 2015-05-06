@@ -14,6 +14,7 @@
     "tests"
   ],
   "dependencies": {
+    "animate.css": "~3.2.6",
     "i18next": "~1.8.2",
     "lodash": "~3.8.0",
     "marked": "~0.3.3",

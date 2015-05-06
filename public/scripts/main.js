@@ -2,6 +2,7 @@ var Ractive = require('ractive');
 var _ = require('underscore');
 require('ractive-transitions-fade');
 require('ractive-transitions-slide');
+require('./lib/ractive/transitions/animate.js');
 require('./lib/ractive/components.js');
 require('./lib/ractive/helpers.js');
 

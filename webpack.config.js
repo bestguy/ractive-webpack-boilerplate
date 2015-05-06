@@ -17,13 +17,14 @@ module.exports = {
   },
   resolve: {
     alias: {
+                 'animate.css': __dirname + '/public/scripts/bower_components/animate.css/animate.css',
                        i18next: __dirname + '/public/scripts/bower_components/i18next/i18next.amd.js',
                         marked: __dirname + '/public/scripts/bower_components/marked/lib/marked.js',
                         moment: __dirname + '/public/scripts/bower_components/moment/moment.js',
                        ractive: __dirname + '/public/scripts/bower_components/ractive/ractive.js',
                        Ractive: __dirname + '/public/scripts/bower_components/ractive/ractive.js',
-    'ractive-transitions-fade': __dirname + '/public/scripts/bower_components/ractive-transitions-fade/ractive-transitions-fade.js',
-   'ractive-transitions-slide': __dirname + '/public/scripts/bower_components/ractive-transitions-slide/ractive-transitions-slide.js',
+    'ractive-transitions-fade': __dirname + '/public/scripts/bower_components/ractive-transitions-fade/dist/ractive-transitions-fade.js',
+   'ractive-transitions-slide': __dirname + '/public/scripts/bower_components/ractive-transitions-slide/dist/ractive-transitions-slide.js',
                   'underscore': __dirname + '/public/scripts/bower_components/lodash/lodash.js',
                 'webpack-i18n': __dirname + '/public/scripts/lib/webpack/webpack-i18n.js',
                        'xhttp': __dirname + '/public/scripts/bower_components/xhttp/dist/xhttp.js'

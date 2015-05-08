@@ -10,7 +10,10 @@ Boilerplate repo for a few of my *favorite things*:
 * [marked](https://github.com/chjj/marked)
 * [Moment.js](http://momentjs.com/)
 * [xhttp](https://github.com/Mitranim/xhttp)
-
+* [Ractive-route](https://github.com/MartinKolarik/ractive-route)
+* [Animate.css](https://daneden.github.io/animate.css/
+* [Bootstrap](http://getbootstrap.com/)
+* [Font-Awesome](http://fontawesome.io/)
 
 ![](Readme.jpg)
 

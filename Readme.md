@@ -15,6 +15,8 @@ Boilerplate repo for a few of my *favorite things*:
 * [Bootstrap](http://getbootstrap.com/)
 * [Font-Awesome](http://fontawesome.io/)
 
+TODO: add localstorage solution for 
+
 ![](Readme.jpg)
 
 ----

@@ -14,8 +14,7 @@ Boilerplate repo for a few of my *favorite things*:
 * [Animate.css](https://daneden.github.io/animate.css/
 * [Bootstrap](http://getbootstrap.com/)
 * [Font-Awesome](http://fontawesome.io/)
-
-TODO: add localstorage solution for 
+* **TODO**: Add pattern for LocalStorage-backed data.
 
 ![](Readme.jpg)
 

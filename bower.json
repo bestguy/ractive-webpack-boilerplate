@@ -25,6 +25,7 @@
     "ractive-route": "https://github.com/MartinKolarik/ractive-route.git#~0.2.0",
     "ractive-transitions-fade": "~0.2.1",
     "ractive-transitions-slide": "~0.2.1",
-    "xhttp": "~0.0.6"
+    "xhttp": "~0.0.6",
+    "aurelia-event-aggregator": "~0.4.0"
   }
 }

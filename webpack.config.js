@@ -22,6 +22,7 @@ module.exports = {
                        i18next: __dirname + '/public/scripts/bower_components/i18next/i18next.amd.js',
                         marked: __dirname + '/public/scripts/bower_components/marked/lib/marked.js',
                         moment: __dirname + '/public/scripts/bower_components/moment/moment.js',
+                        pubsub: __dirname + '/public/scripts/bower_components/aurelia-event-aggregator/dist/commonjs/index.js',
                        ractive: __dirname + '/public/scripts/bower_components/ractive/ractive.js',
                        Ractive: __dirname + '/public/scripts/bower_components/ractive/ractive.js',
                'ractive-route': __dirname + '/public/scripts/bower_components/ractive-route/ractive-route.js',

@@ -1,16 +1,19 @@
 <div intro="animate:bounceInLeft" outro="animate:bounceOut">
   <div class="page-header">
-    <h1>{{ t('app.title') }}</h1>
+    <h1>{{t('app.title')}}</h1>
     <h2>
       <i class="fa fa-fw fa-info-circle"></i>
-      {{ t('home.title') }}
+      {{t('home.title')}}
     </h2>
     <hr>
     <p>{{message}}</p>
   </div>
-  <div class="row text-center">
-    <a href="btn btn-success btn-lg btn-link" href="about">
-      {{ t('home.next') }}
+  <div class="row">
+    <a class="btn btn-default" on-click="increment">
+      {{t('app.increment')}}
+    </a>
+    <a class="btn btn-info" href="about">
+      {{t('home.next')}}
     </a>
   </div>
 </div>

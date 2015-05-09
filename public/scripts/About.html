@@ -8,8 +8,11 @@
     <hr>
     <p>{{message}}</p>
   </div>
-  <div class="row text-center">
-    <a href="btn btn-success btn-lg btn-link" href="/">
+  <div class="row">
+    <a class="btn btn-default" on-click="increment">
+      {{t('app.increment')}}
+    </a>
+    <a href="/" class="btn btn-info">
       {{t('about.back')}}
     </a>
   </div>

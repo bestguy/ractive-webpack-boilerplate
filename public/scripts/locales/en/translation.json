@@ -1,6 +1,7 @@
 {
   "app": {
-    "title": "Ractive Webpack Boilerplate"
+    "title": "Ractive Webpack Boilerplate",
+    "increment": "Send a pubsub message"
   },
   "home": {
     "title": "Home Page",
@@ -9,5 +10,10 @@
   "about": {
     "title": "About Page",
     "back": "Go back to home"
+  },
+  "sidebar": {
+    "count": "Pubsub click count:",
+    "home": "Home",
+    "about": "About"
   }
 }

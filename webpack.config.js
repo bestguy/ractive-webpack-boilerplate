@@ -18,23 +18,19 @@ module.exports = {
     ]
   },
   resolve: {
+    root: BASE + 'bower_components',
     alias: {
-                 'animate.css': BASE + 'bower_components/animate.css/animate.css',
-                       i18next: BASE + 'bower_components/i18next/i18next.amd.js',
-                        marked: BASE + 'bower_components/marked/lib/marked.js',
-                        moment: BASE + 'bower_components/moment/moment.js',
-                        pubsub: BASE + 'bower_components/aurelia-event-aggregator/dist/commonjs/index.js',
-                       ractive: BASE + 'bower_components/ractive/ractive.js',
-                       Ractive: BASE + 'bower_components/ractive/ractive.js',
-               'ractive-route': BASE + 'bower_components/ractive-route/ractive-route.js',
+                        pubsub: 'aurelia-event-aggregator',
+                       Ractive: 'ractive',
     'ractive-transitions-fade': BASE + 'bower_components/ractive-transitions-fade/dist/ractive-transitions-fade.js',
-   'ractive-transitions-slide': BASE + 'bower_components/ractive-transitions-slide/dist/ractive-transitions-slide.js',
-                  'underscore': BASE + 'bower_components/lodash/lodash.js',
-                'webpack-i18n': BASE + 'lib/webpack/webpack-i18n.js',
-                       'xhttp': BASE + 'bower_components/xhttp/dist/xhttp.js'
+                  'underscore': 'lodash',
+                'webpack-i18n': BASE + 'lib/webpack/webpack-i18n.js'
     }
   },
   plugins: [
+    new webpack.ResolverPlugin(
+      new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('bower.json', ['main'])
+    ),
     new webpack.ProvidePlugin({
      $: 'jquery',
      jQuery: 'jquery'

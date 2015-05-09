@@ -2,7 +2,7 @@ require('./lib/ractive/transitions.js');
 require('./lib/ractive/components.js');
 require('./lib/ractive/helpers.js');
 
-require('./main.less');
+require('./main.css');
 
 var Router = require('ractive-route');
 

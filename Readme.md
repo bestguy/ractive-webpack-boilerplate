@@ -11,7 +11,7 @@ Boilerplate repo for a few of my *favorite things*:
 * [Moment.js](http://momentjs.com/)
 * [xhttp](https://github.com/Mitranim/xhttp)
 * [Ractive-route](https://github.com/MartinKolarik/ractive-route)
-* [Animate.css](https://daneden.github.io/animate.css/
+* [Animate.css](https://daneden.github.io/animate.css/)
 * [Bootstrap](http://getbootstrap.com/)
 * [Font-Awesome](http://fontawesome.io/)
 * **TODO**: Add pattern for LocalStorage-backed data.

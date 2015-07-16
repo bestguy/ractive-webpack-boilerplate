@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "main": "app.js",
+  "scripts": {
+    "install": "bower install"
+  },
   "dependencies": {
     "config": "^1.8.1",
     "express": "^4.10.2",

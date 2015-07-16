@@ -1,7 +1,6 @@
 var Ractive = require('ractive');
 
 Ractive.components.checkmark = Ractive.extend({
-  magic: true,
   data: {
     value: false
   },

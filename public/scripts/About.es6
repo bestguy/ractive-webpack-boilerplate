@@ -1,6 +1,9 @@
-let Ractive = require('ractive');
+import Ractive from 'ractive';
 
-module.exports = Ractive.extend({
+/**
+ * ES6 module
+ */
+export default Ractive.extend({
   template: require('./About.html'),
   data() {
     return {

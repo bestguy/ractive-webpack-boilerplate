@@ -1,19 +1,21 @@
-let Ractive = require('ractive');
-require('./lib/ractive/transitions.js');
-require('./lib/ractive/components.js');
-require('./lib/ractive/helpers.js');
+import Ractive from 'ractive';
+import Router from 'ractive-route';
+import Sidebar from './Sidebar.js';
+import { EventAggregator } from 'pubsub';
 
-require('./main.less');
+import './lib/ractive/transitions.js';
+import './lib/ractive/components.js';
+import './lib/ractive/helpers.js';
+import './main.less';
 
-let EventAggregator = require('pubsub').EventAggregator;
-let pubsub = new EventAggregator();
-let Router = require('ractive-route');
-let Sidebar = require('./Sidebar.js');
+import About from './About.es6';
+import Home from './Home.js';
 
 let sidebar = new Sidebar({
   el: '#sidebar'
 });
 
+let pubsub = new EventAggregator();
 pubsub.subscribe('add', msg => sidebar.add('clicks'));
 
 let router = new Router({
@@ -26,8 +28,8 @@ let router = new Router({
   }
 });
 
-router.addRoute('/', require('./Home.js'));
-router.addRoute('/about', require('./About.es6'));
+router.addRoute('/', Home);
+router.addRoute('/about', About);
 
 router.dispatch('/', { noHistory: true })
       .watchLinks()

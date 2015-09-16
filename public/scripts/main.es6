@@ -1,6 +1,5 @@
 import Ractive from 'ractive';
 import Router from 'ractive-route';
-import Sidebar from './Sidebar.js';
 import { EventAggregator } from 'pubsub';
 
 import './lib/ractive/transitions.es6';
@@ -9,7 +8,8 @@ import './lib/ractive/helpers.es6';
 import './main.less';
 
 import About from './About.es6';
-import Home from './Home.js';
+import Home from './Home.es6';
+import Sidebar from './Sidebar.es6';
 
 let sidebar = new Sidebar({
   el: '#sidebar'

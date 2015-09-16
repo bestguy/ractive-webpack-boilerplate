@@ -3,9 +3,9 @@ import Router from 'ractive-route';
 import Sidebar from './Sidebar.js';
 import { EventAggregator } from 'pubsub';
 
-import './lib/ractive/transitions.js';
-import './lib/ractive/components.js';
-import './lib/ractive/helpers.js';
+import './lib/ractive/transitions.es6';
+import './lib/ractive/components.es6';
+import './lib/ractive/helpers.es6';
 import './main.less';
 
 import About from './About.es6';

@@ -1,10 +1,10 @@
-var Ractive = require('ractive');
-var helpers = Ractive.defaults.data;
+import Ractive from 'ractive';
+let helpers = Ractive.defaults.data;
 
 /*
  * Formats a date using the specified format.
  */
-var moment = require('moment');
+import moment from 'moment';
 
 function datetime(date, format) {
   return moment(date).format(format);
@@ -36,19 +36,19 @@ helpers.weekday = weekday;
 /*
  * Formats a date using the specified format.
  */
-var marked = require('marked');
+import marked from 'marked';
 marked.setOptions({
   breaks: true,
   sanitize: true,
   smartypants: true
 });
 
-var test = /\:[a-z0-9_\-\+]+\:/g;
+let test = /\:[a-z0-9_\-\+]+\:/g;
 
 function emoji(someString) {
   return someString.replace(test, function (match) {
     var name = String(match).slice(1, -1);
-    return '<i class="' + name + '"></i>';
+    return `<i class="${name}"></i>`;
   });
 }
 
@@ -64,13 +64,7 @@ function markdown(text) {
 helpers.markdown = markdown;
 helpers.md = markdown;
 
-module.exports = {
-  datetime: datetime,
-  markdown: markdown
-}
-
-
-var i18next = require('webpack-i18n');
+import i18next from 'webpack-i18n';
 i18next.init({
   fallbackLng: 'en',
   interpolationPrefix: '{{',

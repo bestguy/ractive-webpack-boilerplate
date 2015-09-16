@@ -1,4 +1,4 @@
-var Ractive = require('ractive');
+import Ractive from 'ractive';
 
 Ractive.components.checkmark = Ractive.extend({
   data: {

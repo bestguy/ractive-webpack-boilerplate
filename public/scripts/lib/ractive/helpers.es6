@@ -46,7 +46,7 @@ marked.setOptions({
 let test = /\:[a-z0-9_\-\+]+\:/g;
 
 function emoji(someString) {
-  return someString.replace(test, function (match) {
+  return someString.replace(test, (match) => {
     var name = String(match).slice(1, -1);
     return `<i class="${name}"></i>`;
   });

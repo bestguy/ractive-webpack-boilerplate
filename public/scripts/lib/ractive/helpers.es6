@@ -43,22 +43,20 @@ marked.setOptions({
   smartypants: true
 });
 
-let test = /\:[a-z0-9_\-\+]+\:/g;
-
-function emoji(someString) {
-  return someString.replace(test, (match) => {
-    var name = String(match).slice(1, -1);
+/**
+ * Shortcut to render font icons via :someIcon: syntax.
+ * @param {String} someText Markdown string to check for icons.
+ * @returns {String} Markdown with icons replaced with <i> tags.
+ */
+function emoji(someText) {
+  return someText.replace(/\:[a-z0-9_\-\+]+\:/g, (match) => {
+    let name = String(match).slice(1, -1);
     return `<i class="${name}"></i>`;
   });
 }
 
 function markdown(text) {
-  if (text) {
-    text = marked(text);
-    text = emoji(text); // TODO size as option
-  }
-
-  return text;
+  return text ? emoji(marked(text)) : text;
 }
 
 helpers.markdown = markdown;
@@ -72,5 +70,11 @@ i18next.init({
   translations: require('../../locales/translations.js')
 });
 
+/**
+ * Translation helper, embeds translated string and allows passing embeded params.
+ * @param {String} key Translation string key.
+ * @param {String} ...params Optional params
+ * @returns {String} Translated string.
+ */
 helpers.t = (key, ...params) => i18next.t(key, params);
 

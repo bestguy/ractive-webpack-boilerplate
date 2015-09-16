@@ -72,5 +72,5 @@ i18next.init({
   translations: require('../../locales/translations.js')
 });
 
-helpers.t = i18next.t;
+helpers.t = (key, ...params) => i18next.t(key, params);
 

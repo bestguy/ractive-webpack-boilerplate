@@ -14,18 +14,18 @@
     "tests"
   ],
   "dependencies": {
-    "animate.css": "~3.2.6",
-    "bootstrap": "~3.3.4",
-    "font-awesome": "~4.3.0",
-    "i18next": "~1.8.2",
-    "lodash": "~3.8.0",
+    "animate.css": "~3.4.0",
+    "aurelia-event-aggregator": "~0.8.0",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "i18next": "~1.10.2",
+    "lodash": "~3.10.1",
     "marked": "~0.3.3",
     "moment": "~2.10.2",
     "ractive": "~0.7.3",
-    "ractive-route": "https://github.com/MartinKolarik/ractive-route.git#~0.2.0",
+    "ractive-route": "https://github.com/MartinKolarik/ractive-route.git#~0.3.0",
     "ractive-transitions-fade": "~0.2.1",
     "ractive-transitions-slide": "~0.2.1",
-    "xhttp": "~0.0.6",
-    "aurelia-event-aggregator": "~0.4.0"
+    "xhttp": "~0.0.7"
   }
 }

@@ -20,7 +20,7 @@ pubsub.subscribe('add', msg => sidebar.add('clicks'));
 
 let router = new Router({
   el: '#main',
-  basePath: window.location.pathname, // TODO just use basepath always? Avoids SS coupling
+  basePath: '/',
   data() {
     return {
       pubsub: pubsub
@@ -31,6 +31,6 @@ let router = new Router({
 router.addRoute('/', Home);
 router.addRoute('/about', About);
 
-router.dispatch('/', { noHistory: true })
+router.dispatch(window.location.pathname, { noHistory: true })
       .watchLinks()
       .watchState();

@@ -1,6 +1,8 @@
 import Ractive from 'ractive';
 let helpers = Ractive.defaults.data;
 
+// ## Date & Time
+
 /*
  * Formats a date using the specified format.
  */
@@ -33,15 +35,7 @@ function weekday(day) {
 
 helpers.weekday = weekday;
 
-/*
- * Formats a date using the specified format.
- */
-import marked from 'marked';
-marked.setOptions({
-  breaks: true,
-  sanitize: true,
-  smartypants: true
-});
+// ## Markdown
 
 import renderer from 'markdown-it';
 let md = renderer({
@@ -59,6 +53,8 @@ function markdown(text) {
 
 helpers.markdown = markdown;
 helpers.md = markdown;
+
+// ## I18N
 
 import i18next from 'webpack-i18n';
 i18next.init({

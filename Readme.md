@@ -7,7 +7,7 @@ Boilerplate repo for a few of my *favorite things*:
 * [Webpack](http://webpack.github.io)
 * [i18next](http://i18next.com/)
 * [lodash](https://lodash.com/docshttps://github.com/chjj/marked)
-* [marked](https://github.com/chjj/marked)
+* [markdown-it](https://markdown-it.github.io)
 * [Moment.js](http://momentjs.com/)
 * [xhttp](https://github.com/Mitranim/xhttp)
 * [Ractive-route](https://github.com/MartinKolarik/ractive-route)

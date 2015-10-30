@@ -43,20 +43,18 @@ marked.setOptions({
   smartypants: true
 });
 
-/**
- * Shortcut to render font icons via :someIcon: syntax.
- * @param {String} someText Markdown string to check for icons.
- * @returns {String} Markdown with icons replaced with <i> tags.
- */
-function emoji(someText) {
-  return someText.replace(/\:[a-z0-9_\-\+]+\:/g, (match) => {
-    let name = String(match).slice(1, -1);
-    return `<i class="${name}"></i>`;
-  });
-}
+import renderer from 'markdown-it';
+let md = renderer({
+  breaks: true,
+  linkify: true,
+  typographer: true
+});
+
+import light from 'markdown-it-emoji';
+md.use(light);
 
 function markdown(text) {
-  return text ? emoji(marked(text)) : text;
+  return text ? md.render(text) : text;
 }
 
 helpers.markdown = markdown;

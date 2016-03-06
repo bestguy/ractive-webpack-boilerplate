@@ -9,11 +9,18 @@
   },
   "about": {
     "title": "About Page",
+    "back": "Go back to home",
+    "next": "Go to the next page"
+  },
+  "markup": {
+    "title": "Markup Examples",
+    "placeholder": "Type markdown here",
     "back": "Go back to home"
   },
   "sidebar": {
     "count": "Pubsub click count:",
     "home": "Home",
-    "about": "About"
+    "about": "About",
+    "markup": "Markup Examples"
   }
 }

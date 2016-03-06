@@ -9,6 +9,7 @@ import './main.less';
 
 import About from './About.es6';
 import Home from './Home.es6';
+import MarkupExamples from './MarkupExamples.es6';
 import Sidebar from './Sidebar.es6';
 
 let sidebar = new Sidebar({
@@ -30,6 +31,7 @@ let router = new Router({
 
 router.addRoute('/', Home);
 router.addRoute('/about', About);
+router.addRoute('/markup', MarkupExamples);
 
 router.dispatch(window.location.pathname, { noHistory: true })
       .watchLinks()

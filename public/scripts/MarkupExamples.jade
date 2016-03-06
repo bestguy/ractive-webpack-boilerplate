@@ -6,13 +6,13 @@ div(intro="animate:fadeInDown", outro="animate:fadeOutUp")
       | [[t("markup.title")]]
     hr
     p {{message}}
-    hr
-    .row
-      .col-sm-6
-        textarea.form-control(value="{{markdown}}", placeholder="[[t('markup.placeholder')]]")
-      .col-sm-6
-        // Triple brackets are needed to render unescaped HTML
-        {{{md(markdown)}}}
-    .row
-      a.btn.btn-info(href="/") [[t("markup.back")]]
+  .row
+    .col-sm-6
+      textarea.form-control(value="{{markdown}}", placeholder="[[t('markup.placeholder')]]")
+    .col-sm-6
+      // Triple brackets are needed to render unescaped HTML
+      {{{md(markdown)}}}
+  hr
+  .row
+    a.btn.btn-info(href="/") [[t("markup.back")]]
 

@@ -19,18 +19,10 @@ module.exports = {
     ]
   },
   resolve: {
-    root: `${BASE}/bower_components`,
     alias: {
                         pubsub: 'aurelia-event-aggregator',
                        Ractive: 'ractive',
-    'ractive-transitions-fade': `${BASE}/bower_components/ractive-transitions-fade/dist/ractive-transitions-fade.js`,
-                  'underscore': 'lodash', // old habits die hard
-                'webpack-i18n': `${BASE}/lib/webpack/webpack-i18n.js`
+                  'underscore': 'lodash' // old habits die hard
     }
-  },
-  plugins: [
-    new webpack.ResolverPlugin(
-      new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('bower.json', ['main'])
-    )
-  ]
+  }
 };

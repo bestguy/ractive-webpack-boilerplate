@@ -1,25 +1,6 @@
 import Ractive from 'ractive';
 let helpers = Ractive.defaults.data;
 
-// ## Markdown
-
-import renderer from 'markdown-it';
-let md = renderer({
-  breaks: true,
-  linkify: true,
-  typographer: true
-});
-
-import light from 'markdown-it-emoji';
-md.use(light);
-
-function markdown(text) {
-  return text ? md.render(text) : text;
-}
-
-helpers.markdown = markdown;
-helpers.md = markdown;
-
 // ## I18N
 
 import i18next from 'i18next';

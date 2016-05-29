@@ -6,6 +6,7 @@ import './lib/ractive/transitions.es6';
 import './lib/ractive/components.es6';
 import './lib/ractive/helpers.es6';
 import 'ractive-datetime';
+import 'ractive-markdown';
 import './main.less';
 
 import About from './About.es6';

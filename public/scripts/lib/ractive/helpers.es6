@@ -1,40 +1,6 @@
 import Ractive from 'ractive';
 let helpers = Ractive.defaults.data;
 
-// ## Date & Time
-
-/*
- * Formats a date using the specified format.
- */
-import moment from 'moment';
-
-function datetime(date, format) {
-  return moment(date).format(format);
-}
-
-helpers.datetime = datetime;
-
-
-function fromNow(date) {
-  return moment(date).fromNow();
-}
-
-helpers.fromNow = fromNow;
-
-function sameDay(a, b) {
-  return a && b && a.getTime() == b.getTime();
-}
-helpers.sameDay = sameDay;
-
-/*
- * Returns localized weekday name
- */
-function weekday(day) {
-  return moment().isoWeekday(parseInt(day));
-}
-
-helpers.weekday = weekday;
-
 // ## Markdown
 
 import renderer from 'markdown-it';

@@ -26,7 +26,7 @@
     "less-loader": "^2.2.2",
     "lodash": "^4.6.1",
     "ractive": "^0.7.3",
-    "ractive-animatecss": "ractive-animatecss",
+    "ractive-animatecss": "^0.1.0",
     "ractive-datetime": "^0.1.1",
     "ractive-loader": "^0.5.6",
     "ractive-markdown": "^0.1.1",

@@ -1,8 +1,8 @@
 import Ractive from 'ractive';
 import Router from 'ractive-route';
 import { EventAggregator } from 'pubsub';
+import 'ractive-animatecss';
 
-import './lib/ractive/transitions.es6';
 import './lib/ractive/components.es6';
 import './lib/ractive/helpers.es6';
 import 'ractive-datetime';

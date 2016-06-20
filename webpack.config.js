@@ -1,5 +1,3 @@
-'use strict';
-let webpack = require('webpack');
 const BASE = `${__dirname}/public/scripts`;
 
 module.exports = {
@@ -11,7 +9,11 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css/, loader: 'style-loader!css-loader!autoprefixer-loader' },
-      { test: /\.es6/, loader: 'babel-loader' },
+      {
+        test: /\.(es6|js|jsx)$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
       { test: /\.less/, loader: 'style-loader!css-loader!autoprefixer-loader!less-loader' },
       { test: /\.jade$/, loader: 'ractive!jade-html' },
       { test: /\.json/, loader: 'json-loader' },
@@ -20,9 +22,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-                        pubsub: 'aurelia-event-aggregator',
-                       Ractive: 'ractive',
-                  'underscore': 'lodash' // old habits die hard
+      pubsub: 'aurelia-event-aggregator',
+      Ractive: 'ractive'
     }
   }
 };

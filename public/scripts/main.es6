@@ -9,25 +9,27 @@ import 'ractive-datetime';
 import 'ractive-markdown';
 import './main.less';
 
+Ractive.DEBUG = /unminified/.test(() => { /* unminified */ });
+
 import About from './About.es6';
 import Home from './Home.es6';
 import MarkupExamples from './MarkupExamples.es6';
 import Sidebar from './Sidebar.es6';
 
-let sidebar = new Sidebar({
+const sidebar = new Sidebar({
   el: '#sidebar'
 });
 
-let pubsub = new EventAggregator();
-pubsub.subscribe('add', msg => sidebar.add('clicks'));
+const pubsub = new EventAggregator();
+pubsub.subscribe('add', () => sidebar.add('clicks'));
 
-let router = new Router({
+const router = new Router({
   el: '#main',
   basePath: '/',
   data() {
     return {
-      pubsub: pubsub
-    }
+      pubsub
+    };
   }
 });
 

@@ -1,17 +1,18 @@
 import Ractive from 'ractive';
+import template from './About.html';
 
 /**
  * ES6 module
  */
 export default Ractive.extend({
-  template: require('./About.html'),
+  template,
   data() {
     return {
       message: 'This is the About page.'
-    }
+    };
   },
   oninit() {
-    let { pubsub } = this.get();
+    const { pubsub } = this.get();
     this.on('increment', () => pubsub.publish('add'));
   }
 });

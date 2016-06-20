@@ -1,5 +1,5 @@
 import Ractive from 'ractive';
-let helpers = Ractive.defaults.data;
+const helpers = Ractive.defaults.data;
 
 // ## I18N
 
@@ -7,7 +7,7 @@ import i18next from 'i18next';
 import resources from 'i18next-resource-store-loader!../../locales/index.js';
 
 i18next.init({
-  resources: resources,
+  resources,
   fallbackLng: 'en',
   interpolationPrefix: '{{',
   interpolationSuffix: '}}'
@@ -20,6 +20,3 @@ i18next.init({
    */
   helpers.t = (key, ...params) => i18next.t(key, params);
 });
-
-
-

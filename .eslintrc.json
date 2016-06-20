@@ -2,6 +2,10 @@
   "extends": "airbnb-base",
   "rules": {
     "comma-dangle": 0,
-    "import/no-unresolved": 1
+    "import/no-unresolved": 1,
+    "prefer-const": [1, {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": true
+    }]
   }
 }

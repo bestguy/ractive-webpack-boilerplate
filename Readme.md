@@ -22,16 +22,16 @@ Boilerplate repo for a few of my *favorite things*:
 
 ## Install & Run:
 
-### For development with hot reloading:
+### For development bundle:
 
     npm install
-    node app.js
+    npm start
 
 Open: http://localhost:3000
 
 ### For production bundle:
 
     webpack -p
-    node app.js
+    npm start
 
-Open: http://localhost:3000
+Open: [http://localhost:3000](http://localhost:3000)

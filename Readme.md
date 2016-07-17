@@ -22,12 +22,12 @@ Boilerplate repo for a few of my *favorite things*:
 
 ## Install & Run:
 
-### For development bundle:
+### For development bundle and hot reloading:
 
     npm install
     npm start
 
-Open: http://localhost:3000
+Open: [http://localhost:3000](http://localhost:3000)
 
 ### For production bundle:
 

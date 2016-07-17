@@ -40,3 +40,7 @@ router.addRoute('/markup', MarkupExamples);
 router.dispatch(window.location.pathname, { noHistory: true })
       .watchLinks()
       .watchState();
+
+if (module.hot) {
+  module.hot.accept();
+}

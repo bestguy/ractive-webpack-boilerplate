@@ -1,11 +1,27 @@
 {
   "extends": "airbnb-base",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
   "rules": {
     "comma-dangle": 0,
     "import/no-unresolved": 1,
+    "new-cap": 1,
+    "no-console": 0,
     "prefer-const": [1, {
       "destructuring": "any",
       "ignoreReadBeforeAssign": true
-    }]
+    }],
+    "require-jsdoc": [1, {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true
+      }
+    }],
+    "spaced-comment": 0,
+    "strict": 1
   }
 }

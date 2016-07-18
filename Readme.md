@@ -34,7 +34,10 @@ Open: [http://localhost:3000](http://localhost:3000)
 
 ### For production bundle:
 
-    webpack -p
-    npm start
+    npm dist
 
+The minified `public/bundle.js` file can be deployed on a CDN, your host, or deployed with the node.js server at:
+
+    npm start
 Open: [http://localhost:3000](http://localhost:3000)
+

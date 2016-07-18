@@ -1,6 +1,12 @@
 # Ractive Webpack Boilerplate
 
-Boilerplate repo for a few of my *favorite things*:
+**RactiveJS application boilerplate with routing, internationalized text, date formatting, animations, pubsub, etc.**
+
+Develop with ES2015, Webpack, and hot reloading - all the good stuff from React development, without using React and JSX :-P
+
+(You can also build on the Node.js development server to be full API or application server.)
+
+Full list of a few of my *favorite things*:
 
 * [ES6 (via BabelJS)](http://babeljs.io/)
 * [Ractive](http://www.ractivejs.org/)
@@ -14,9 +20,6 @@ Boilerplate repo for a few of my *favorite things*:
 * [Animate.css](https://daneden.github.io/animate.css/)
 * [Bootstrap](http://getbootstrap.com/)
 * [Font-Awesome](http://fontawesome.io/)
-* **TODO**: Add pattern for LocalStorage-backed data.
-
-![](Readme.jpg)
 
 ----
 

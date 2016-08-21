@@ -15,10 +15,14 @@ app.use(express.static(`${__dirname}/public`));
 if (config.env === 'dev') {
   const webpack = require('webpack');
   const webpackConfig = require('./webpack.dev.config.js');
+  const DashboardPlugin = require('webpack-dashboard/plugin');
+
   const webpackDevMiddleware = require('webpack-dev-middleware');
   const webpackHotMiddleware = require('webpack-hot-middleware');
 
   const compiler = webpack(webpackConfig);
+  compiler.apply(new DashboardPlugin());
+
   app.use(webpackDevMiddleware(compiler));
   app.use(webpackHotMiddleware(compiler));
 }

@@ -48,7 +48,7 @@
     "ractive-transitions-slide": "^0.4.0",
     "style-loader": "^0.13.0",
     "webpack": "^2.1.0-beta.21",
-    "webpack-dashboard": "0.1.8",
+    "webpack-dashboard": "^0.2.0",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.12.1",
     "xhttp": "0.0.8"

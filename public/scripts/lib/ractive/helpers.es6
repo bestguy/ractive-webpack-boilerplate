@@ -1,6 +1,12 @@
 import Ractive from 'ractive';
 const helpers = Ractive.defaults.data;
 
+import { datetime } from 'ractive-datetime';
+import { md } from 'ractive-markdown';
+
+helpers.datetime = datetime;
+helpers.md = md;
+
 // ## I18N
 
 import i18next from 'i18next';

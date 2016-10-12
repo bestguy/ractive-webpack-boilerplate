@@ -11,7 +11,7 @@ div(intro="animate:fadeInDown", outro="animate:fadeOutUp")
       textarea.form-control(value="{{markdown}}", placeholder="[[t('markup.placeholder')]]")
     .col-sm-6
       // Triple brackets are needed to render unescaped HTML
-      {{{md(markdown)}}}
+      | {{{md(markdown)}}}
   hr
   .row
     a.btn.btn-info(href="/") [[t("markup.back")]]

@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: [
-    path.resolve(__dirname, './public/scripts/main.es6')
+    path.resolve(__dirname, './src/main')
   ],
   output: {
     path: path.resolve(__dirname, './public'),
@@ -14,7 +14,7 @@ module.exports = {
     loaders: [
       { test: /\.css/, loader: 'style!css!postcss' },
       {
-        test: /\.(es6|js|jsx)$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loaders: ['babel'],
       },

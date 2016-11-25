@@ -12,16 +12,16 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.css/, loader: 'style!css!postcss' },
+      { test: /\.css/, loader: 'style-loader!css-loader!postcss-loader' },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loaders: ['babel'],
+        loaders: ['babel-loader'],
       },
-      { test: /\.less/, loader: 'style!css!postcss!less-loader' },
-      { test: /\.jade$/, loader: 'ractive!jade-html' },
+      { test: /\.less/, loader: 'style-loader!css-loader!postcss-loader!less-loader' },
+      { test: /\.jade$/, loader: 'ractive-loader!jade-html-loader' },
       { test: /\.json/, loader: 'json-loader' },
-      { test: /\.html/, loader: 'ractive' }
+      { test: /\.html/, loader: 'ractive-loader' }
     ]
   },
   plugins: [

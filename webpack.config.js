@@ -31,11 +31,6 @@ module.exports = {
         NODE_ENV: JSON.stringify('production')
       }
     }),
-    new webpack.LoaderOptionsPlugin({
-      postcss: [
-        autoprefixer({ browsers: ['last 2 versions'] })
-      ]
-    }),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false

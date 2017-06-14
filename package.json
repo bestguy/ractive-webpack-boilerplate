@@ -9,12 +9,18 @@
     "start": "webpack-dashboard -- node app.js"
   },
   "dependencies": {
+    "aurelia-event-aggregator": "^1.0.0",
     "config": "^1.8.1",
     "express": "^4.10.2",
-    "morgan": "^1.5.0"
+    "morgan": "^1.5.0",
+    "ractive": "^0.9.1",
+    "ractive-animatecss": "^0.1.0",
+    "ractive-datetime": "^1.0.0",
+    "ractive-loader": "^0.5.6",
+    "ractive-markdown": "^0.1.1",
+    "ractive-route": "github:martinkolarik/ractive-route"
   },
   "devDependencies": {
-    "aurelia-event-aggregator": "^1.0.0",
     "autoprefixer": "^7.1.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
@@ -41,12 +47,6 @@
     "lodash": "^4.15.0",
     "postcss": "^6.0.2",
     "postcss-loader": "^2.0.6",
-    "ractive": "^0.9.1",
-    "ractive-animatecss": "^0.1.0",
-    "ractive-datetime": "^1.0.0",
-    "ractive-loader": "^0.5.6",
-    "ractive-markdown": "^0.1.1",
-    "ractive-route": "github:martinkolarik/ractive-route",
     "ractive-transitions-fade": "^0.3.1",
     "ractive-transitions-slide": "^0.4.0",
     "style-loader": "^0.18.2",

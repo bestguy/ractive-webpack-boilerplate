@@ -9,7 +9,7 @@ export default Ractive.extend({ // jshint ignore:line
     };
   },
   oninit() {
-    const pubsub = this.get('pubsub');
+    const { pubsub } = this.get();
     this.on('increment', () => pubsub.publish('add'));
   }
 });

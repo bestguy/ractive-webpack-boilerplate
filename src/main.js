@@ -2,19 +2,19 @@ import Ractive from 'ractive';
 import Router from 'ractive-route';
 import { EventAggregator } from 'pubsub';
 import 'ractive-animatecss';
-
-import './lib/ractive/components.js';
-import './lib/ractive/helpers.js';
 import 'ractive-datetime';
 import 'ractive-markdown';
-import './main.less';
+import './lib/ractive/components.js';
+import './lib/ractive/helpers.js';
 
-Ractive.DEBUG = /unminified/.test(() => { /* unminified */ });
+import './main.less';
 
 import About from './About.js';
 import Home from './Home.js';
 import MarkupExamples from './MarkupExamples.js';
 import Sidebar from './Sidebar.js';
+
+Ractive.DEBUG = /unminified/.test(() => { /* unminified */ });
 
 const sidebar = new Sidebar({
   el: '#sidebar'

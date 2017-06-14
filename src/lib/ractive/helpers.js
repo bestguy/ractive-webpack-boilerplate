@@ -1,16 +1,15 @@
 import Ractive from 'ractive';
-const helpers = Ractive.defaults.data;
-
+import i18next from 'i18next';
+import resources from 'i18next-resource-store-loader!../../locales/index.js';
 import { datetime } from 'ractive-datetime';
 import { md } from 'ractive-markdown';
+
+const helpers = Ractive.defaults.data;
 
 helpers.datetime = datetime;
 helpers.md = md;
 
 // ## I18N
-
-import i18next from 'i18next';
-import resources from 'i18next-resource-store-loader!../../locales/index.js';
 
 i18next.init({
   resources,

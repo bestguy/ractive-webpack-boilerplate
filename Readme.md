@@ -18,7 +18,6 @@ Full list of a few of my *favorite things*:
 * [lodash](https://lodash.com/docshttps://github.com/chjj/marked)
 * [markdown-it](https://markdown-it.github.io)
 * [Moment.js](http://momentjs.com/)
-* [xhttp](https://github.com/Mitranim/xhttp)
 * [Ractive-route](https://github.com/MartinKolarik/ractive-route)
 * [Animate.css](https://daneden.github.io/animate.css/)
 * [Bootstrap](http://getbootstrap.com/)

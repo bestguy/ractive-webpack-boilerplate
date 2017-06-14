@@ -1,12 +1,15 @@
 {
   "extends": "airbnb-base",
+  "plugins": [
+    "html"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true
     }
   },
   "rules": {
-    "arrow-body-style": [2, "as-needed", { requireReturnForObjectLiteral: true }],
+    "arrow-body-style": [2, "as-needed", { "requireReturnForObjectLiteral": true }],
     "comma-dangle": 0,
     "import/no-unresolved": 1, // To minimize false errors with Webpack loaders
     "max-len": 1,

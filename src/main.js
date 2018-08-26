@@ -37,9 +37,10 @@ router.addRoute('/', Home);
 router.addRoute('/about', About);
 router.addRoute('/markup', MarkupExamples);
 
-router.dispatch(window.location.pathname, { noHistory: true })
-      .watchLinks()
-      .watchState();
+router
+  .dispatch(window.location.pathname, { noHistory: true })
+  .watchLinks()
+  .watchState();
 
 if (module.hot) {
   module.hot.accept();
